@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.app.intrinsic.intrinsicapp.SecondActivity">
+
+    <Button
+        android:id="@+id/secondpbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="264dp"
+        android:text="main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:layout_marginStart="148dp"
+        android:text="GO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="118dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="168dp"
+        android:text="  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/vanillabutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginStart="163dp"
+        android:text="RESULT: "
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/text"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/chocolatebutton"
+        android:layout_width="331dp"
+        android:layout_height="31dp"
+        android:layout_marginBottom="164dp"
+        android:layout_marginStart="16dp"
+        android:alpha="0.85"
+        android:background="@drawable/button"
+        android:text="no chocolate"
+        app:layout_constraintBottom_toTopOf="@+id/secondpbutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/vanillabutton"
+        android:layout_width="333dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="16dp"
+        android:alpha="0.85"
+        android:background="@drawable/button"
+        android:text="no vanilla"
+        app:layout_constraintBottom_toTopOf="@+id/chocolatebutton"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
